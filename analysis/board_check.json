@@ -1,0 +1,2336 @@
+{
+ "captures": 255,
+ "labels": 17,
+ "class_agreement": 1.0,
+ "features_outside_tolerance": {},
+ "max_abs_feature_diff": {
+  "max_dip": 0.0,
+  "mean_dip": 0.000119,
+  "act150": 0.0,
+  "act400": 0.0,
+  "rough": 1.1e-05,
+  "n_events": 0.0,
+  "width_med": 0.0,
+  "interval_med": 0.0,
+  "interval_cv": 1e-06,
+  "ac_peak": 1e-06,
+  "ac_lag_ms": 2e-06,
+  "zcr": 0.0,
+  "level_drop": 0.0,
+  "lag_fine_ms": 2e-06,
+  "depth_cv": 1e-06
+ },
+ "max_abs_logit_diff": 7.770994102962447e-05,
+ "features_us": {
+  "median": 9612.0,
+  "p95": 10200.5,
+  "max": 10439
+ },
+ "model_us": {
+  "median": 60.0,
+  "p95": 62.0,
+  "max": 161
+ },
+ "total_us": {
+  "median": 9671.0,
+  "p95": 10260.8,
+  "max": 10499
+ },
+ "rows": [
+  {
+   "path": "data\\adapter_20261018_180651_995.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10061,
+   "model_us": 161,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180732_881.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10108,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180648_785.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9775,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180731_014.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8926,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180730_435.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10176,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180647_871.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9389,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180648_384.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9910,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180735_803.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8323,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180655_095.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9964,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180647_467.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9557,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180651_544.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8980,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180729_817.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9215,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180729_186.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9525,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180732_271.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10061,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\adapter_20261018_180733_174.csv",
+   "label": "adapter",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10005,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134152_624.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9581,
+   "model_us": 70,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134154_709.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9098,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134158_306.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9556,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134154_146.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9540,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134151_728.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9699,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134153_088.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9782,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134151_479.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9198,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134155_876.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9609,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134155_205.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9560,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134153_656.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9664,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134157_808.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9640,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134156_970.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9670,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134155_512.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9614,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134150_603.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9574,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\airfryer_20261017_134152_107.csv",
+   "label": "airfryer",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9214,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261018_171349_003.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8931,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261023_184041_294.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8000,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261018_181910_338.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9504,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261016_213205_470.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 7712,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_213131_263.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9877,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261019_210620_394.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9941,
+   "model_us": 62,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261022_183123_659.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9863,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261016_214001_249.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9735,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_171643_501.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8512,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_161733_631.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9901,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_133101_057.csv",
+   "label": "ambient",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9734,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_154524_395.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9382,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261017_162523_460.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9337,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261016_212750_160.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9677,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\ambient_20261019_200026_458.csv",
+   "label": "ambient",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9639,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200543_013.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 7977,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200632_112.csv",
+   "label": "amplifier",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9824,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200619_139.csv",
+   "label": "amplifier",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9254,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200909_040.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9173,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200602_485.csv",
+   "label": "amplifier",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9916,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200839_814.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9832,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200622_381.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8571,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200925_280.csv",
+   "label": "amplifier",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9978,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200905_799.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8287,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200922_036.csv",
+   "label": "amplifier",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9650,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200638_596.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9192,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200826_849.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8745,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200641_839.csv",
+   "label": "amplifier",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9979,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200918_795.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9093,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\amplifier_20261019_200552_760.csv",
+   "label": "amplifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9402,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261016_214546_129.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9764,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261017_213608_327.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9303,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261016_215001_889.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9630,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261021_155148_504.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8723,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261016_215712_344.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9245,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261017_213925_999.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9818,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261018_181423_098.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9859,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261018_181330_280.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9023,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261017_213925_154.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9611,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261016_215000_714.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9617,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261021_154322_105.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9907,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261017_154748_105.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10394,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261021_155214_741.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9414,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261017_160020_688.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9183,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\charger_20261021_154540_330.csv",
+   "label": "charger",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10025,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180354_261.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9732,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180105_258.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9659,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180401_241.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9805,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180100_093.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9697,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180227_126.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9145,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180226_079.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9224,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180224_590.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 10081,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180105_732.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9641,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180400_917.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9727,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180226_669.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9152,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180353_352.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9761,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180359_962.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9802,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180100_559.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9138,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180357_591.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9724,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\console_20261018_180228_856.csv",
+   "label": "console",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9023,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071654_178.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10204,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_070528_366.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 9888,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071551_215.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10431,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_070657_361.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10212,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_181152_791.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10307,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071302_992.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10159,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_181203_309.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10439,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_070813_348.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10166,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_070149_250.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10372,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071305_232.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10199,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_181148_583.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10211,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071651_988.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10361,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071553_754.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 9850,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_065136_659.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10235,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\emp_20261023_071254_705.csv",
+   "label": "emp",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10393,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133750_642.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9585,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133746_236.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9599,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133745_385.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9557,
+   "model_us": 65,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133747_019.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9609,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133743_483.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9621,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133749_481.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9745,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133745_775.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9658,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133750_310.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9710,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133748_513.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9612,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133751_359.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9738,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133743_952.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9614,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133747_527.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9768,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133747_766.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9725,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133746_572.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9610,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\grinder_20261017_133744_401.csv",
+   "label": "grinder",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9628,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_160501_752.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9912,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_153841_326.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9467,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_213054_726.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9425,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_200334_207.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9412,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_160446_607.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9967,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261018_165946_248.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9040,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_213547_888.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 7941,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_132730_399.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 8021,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_153830_530.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9940,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_213549_430.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9595,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_213111_281.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9910,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_160516_957.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9941,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_220122_060.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 9940,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261017_132720_055.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 10030,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\lighter_20261016_220126_386.csv",
+   "label": "lighter",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 8478,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162234_589.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9120,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132913_133.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9251,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162238_130.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9207,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132605_315.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9325,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_133218_342.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9181,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162239_188.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9151,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_163519_667.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9771,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132917_735.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9214,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132914_578.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9360,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162238_370.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9217,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132602_735.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 8287,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162233_006.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9075,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132607_781.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9196,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_162232_274.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9664,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\mixer_20261017_132609_348.csv",
+   "label": "mixer",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9228,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261016_213331_341.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9442,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261016_212932_642.csv",
+   "label": "phone_screen",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9835,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_212532_379.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9500,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_214041_248.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9372,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261019_195711_869.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9367,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261016_212925_011.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 10017,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_154215_192.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9247,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_214045_867.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9449,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_214043_841.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9439,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_154216_559.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9197,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_160331_931.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9146,
+   "model_us": 63,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261016_213329_921.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9339,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_154212_334.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9200,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261017_160334_470.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9211,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\phone_screen_20261016_213332_543.csv",
+   "label": "phone_screen",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9282,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170404_296.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9905,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170405_720.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9800,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170407_174.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9862,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170406_261.csv",
+   "label": "purifier",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 8963,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170402_940.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10082,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170411_312.csv",
+   "label": "purifier",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9173,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170407_527.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10018,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170405_410.csv",
+   "label": "purifier",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9851,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170408_482.csv",
+   "label": "purifier",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9835,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170404_860.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9598,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170410_109.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9730,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170406_607.csv",
+   "label": "purifier",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9572,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170409_058.csv",
+   "label": "purifier",
+   "class_board": "sparking_motor",
+   "class_python": "sparking_motor",
+   "features_us": 9427,
+   "model_us": 58,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170403_409.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 10124,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\purifier_20261018_170410_499.csv",
+   "label": "purifier",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9887,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180957_687.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 10118,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180955_044.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 7974,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_181001_675.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9904,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_181000_270.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9535,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180953_660.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 7835,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180958_276.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9734,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_181002_193.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9736,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180959_668.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8051,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180956_768.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 10105,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180959_326.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9941,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180956_181.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 7902,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180954_179.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9687,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180958_830.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 10070,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_181002_639.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 10127,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\router_20261018_180957_347.csv",
+   "label": "router",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8621,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225741_140.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9984,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225738_692.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9974,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225734_834.csv",
+   "label": "speaker",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9300,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225744_127.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9938,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225935_378.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9081,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225740_285.csv",
+   "label": "speaker",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10242,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225937_329.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9619,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225943_093.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9126,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225739_203.csv",
+   "label": "speaker",
+   "class_board": "emp",
+   "class_python": "emp",
+   "features_us": 10218,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225934_378.csv",
+   "label": "speaker",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 10005,
+   "model_us": 62,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225736_264.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9523,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225742_649.csv",
+   "label": "speaker",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9296,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225940_328.csv",
+   "label": "speaker",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9794,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225939_860.csv",
+   "label": "speaker",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8549,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\speaker_20261016_225939_403.csv",
+   "label": "speaker",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8725,
+   "model_us": 63,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172255_518.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8142,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172256_107.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8852,
+   "model_us": 63,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173528_694.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9583,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173532_382.csv",
+   "label": "tv",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8709,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172254_299.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8293,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173528_094.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9374,
+   "model_us": 58,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172528_065.csv",
+   "label": "tv",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9152,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173531_835.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8742,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173527_660.csv",
+   "label": "tv",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8526,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172524_010.csv",
+   "label": "tv",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9666,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172252_357.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9791,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173531_086.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8716,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172248_295.csv",
+   "label": "tv",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9997,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261018_173525_082.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9267,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\tv_20261017_172256_635.csv",
+   "label": "tv",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9275,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225233_504.csv",
+   "label": "vacuum",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9708,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225235_458.csv",
+   "label": "vacuum",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9151,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225040_902.csv",
+   "label": "vacuum",
+   "class_board": "display",
+   "class_python": "display",
+   "features_us": 9819,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225037_704.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9081,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225038_465.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9139,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225032_796.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9140,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225230_578.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9150,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225037_249.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9554,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225230_051.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9153,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225038_980.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9711,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225227_432.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9113,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225231_616.csv",
+   "label": "vacuum",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9650,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225033_313.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9156,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225035_906.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9141,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\vacuum_20261016_225231_080.csv",
+   "label": "vacuum",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9123,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162427_289.csv",
+   "label": "whisk",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9814,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162423_740.csv",
+   "label": "whisk",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8759,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163621_466.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9613,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163629_199.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9935,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162421_784.csv",
+   "label": "whisk",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 9994,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163627_714.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 10086,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162425_900.csv",
+   "label": "whisk",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 9952,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162424_660.csv",
+   "label": "whisk",
+   "class_board": "switching_supply",
+   "class_python": "switching_supply",
+   "features_us": 8640,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162420_302.csv",
+   "label": "whisk",
+   "class_board": "spark",
+   "class_python": "spark",
+   "features_us": 10015,
+   "model_us": 64,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163624_030.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 10036,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163623_201.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9840,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163628_687.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9855,
+   "model_us": 60,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163625_129.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 10009,
+   "model_us": 61,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_162420_600.csv",
+   "label": "whisk",
+   "class_board": "ambient",
+   "class_python": "ambient",
+   "features_us": 8020,
+   "model_us": 59,
+   "features_off": []
+  },
+  {
+   "path": "data\\whisk_20261017_163620_600.csv",
+   "label": "whisk",
+   "class_board": "mains_hum",
+   "class_python": "mains_hum",
+   "features_us": 9945,
+   "model_us": 60,
+   "features_off": []
+  }
+ ]
+}

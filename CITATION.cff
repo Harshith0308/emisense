@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+type: dataset
+title: "EMISense: a dataset and on-device classifier of electromagnetic interference sources"
+abstract: >-
+  2,295 labelled 100 ms captures of electromagnetic interference from 26
+  household sources and an EMI attack emitter, recorded with a coil,
+  transistor and envelope-detector front end on an ESP32 at 20 kSa/s, with
+  the acquisition and classification firmware, the analysis and training
+  code, and the hardware description.
+authors:
+  - given-names: "G. Harshith"
+    family-names: "Sai"
+    affiliation: "SRM University-AP"
+  - given-names: "Nissi Praharsha"
+    family-names: "C."
+    affiliation: "SRM University-AP"
+  - given-names: "D."
+    family-names: "Manogyna"
+    affiliation: "SRM University-AP"
+  - given-names: "P."
+    family-names: "Sathvika"
+    affiliation: "SRM University-AP"
+  - given-names: "Raushan Kumar"
+    family-names: "Singh"
+version: "1.0.0"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - electromagnetic interference
+  - EMI attack detection
+  - sensor security
+  - TinyML
+  - edge computing
+  - ESP32
+  - dataset

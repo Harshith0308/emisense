@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMISense Live</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <div>
+      <h1>EMISense</h1>
+      <p>Live EMI source detector on an ESP32</p>
+    </div>
+  </div>
+  <div class="controls">
+    <span id="status" class="status" data-state="off" role="status">
+      <span class="dot" aria-hidden="true"></span><span id="status-text">Not connected</span>
+    </span>
+    <div class="seg" role="group" aria-label="Capture mode">
+      <button id="mode-continuous" class="seg-btn" aria-pressed="true"
+              title="Classify every 100 ms window, one after another">Continuous</button>
+      <button id="mode-triggered" class="seg-btn" aria-pressed="false"
+              title="Wait for a burst, then classify it (how a deployed detector runs)">Triggered</button>
+    </div>
+    <button id="btn-run" class="btn" disabled>Start</button>
+    <button id="btn-rest" class="btn btn-ghost" disabled
+            title="Measure the resting level again, with nothing near the coil">Re-measure rest</button>
+    <button id="btn-demo" class="btn btn-ghost"
+            title="Replay recorded captures with the model's outputs (no board needed)">Demo</button>
+    <button id="btn-connect" class="btn btn-primary">Connect detector</button>
+    <button id="btn-theme" class="btn btn-icon" aria-label="Switch light or dark theme" title="Light / dark">
+      <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 2a8 8 0 1 0 0 16V2z" fill="currentColor"/><circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="notice" class="notice" role="alert" hidden></div>
+
+<main class="grid">
+  <section class="card verdict" aria-live="polite" aria-labelledby="h-decision">
+    <div class="card-head">
+      <h2 id="h-decision">Detector decision</h2>
+      <span id="decision-meta" class="meta"></span>
+    </div>
+    <div class="verdict-main">
+      <span id="v-swatch" class="swatch-lg" aria-hidden="true"></span>
+      <div class="v-text">
+        <div id="v-class" class="v-class">Waiting for a capture</div>
+        <div id="v-what" class="v-what">Connect the detector, or start the demo</div>
+      </div>
+      <div class="v-conf"><span id="v-conf">&ndash;</span><small>confidence</small></div>
+    </div>
+    <div class="compare">
+      <div class="det" id="det-emisense" data-state="idle">
+        <div class="det-name">EMISense classifier</div>
+        <div class="det-state"><span class="det-icon" aria-hidden="true"></span><span class="det-text">&ndash;</span></div>
+        <div class="det-sub">alarms only when it identifies the attack</div>
+      </div>
+      <div class="det" id="det-threshold" data-state="idle">
+        <div class="det-name">Amplitude threshold <span class="muted">SecureTrack method</span></div>
+        <div class="det-state"><span class="det-icon" aria-hidden="true"></span><span class="det-text">&ndash;</span></div>
+        <div class="det-sub" id="thr-sub">alarms when the dip exceeds T</div>
+      </div>
+    </div>
+    <div id="avoided" class="avoided" hidden>
+      Threshold false alarm: EMISense identified a harmless source.
+    </div>
+  </section>
+
+  <section class="card probs" aria-labelledby="h-probs">
+    <div class="card-head">
+      <h2 id="h-probs">Class confidence</h2>
+      <span class="meta">from the board's output layer</span>
+    </div>
+    <ul id="prob-list" class="prob-list"></ul>
+  </section>
+
+  <section class="card wave" aria-labelledby="h-wave">
+    <div class="card-head">
+      <h2 id="h-wave">Signal from the coil</h2>
+      <span id="wave-meta" class="meta">100 ms window, 20,000 readings per second</span>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="wave" role="img" aria-label="Depth of the signal below its resting level over the 100 ms window"></canvas>
+      <div id="tip" class="tip" hidden></div>
+    </div>
+    <p class="chart-note">Height is how far the output dips below its resting level: interference pushes it down,
+      so taller means stronger. Dashed: the alarm threshold T. Dotted: the 150-count level that counts as a burst.</p>
+  </section>
+
+  <section class="card tiles" aria-labelledby="h-signal">
+    <div class="card-head"><h2 id="h-signal">Signal in numbers</h2></div>
+    <div class="tile-grid">
+      <div class="tile"><span class="t-label">Deepest dip</span><span class="t-value" id="t-dip">&ndash;</span><span class="t-unit">counts below rest</span></div>
+      <div class="tile"><span class="t-label">Bursts in window</span><span class="t-value" id="t-events">&ndash;</span><span class="t-unit">runs over 150 counts</span></div>
+      <div class="tile"><span class="t-label">Repeats every</span><span class="t-value" id="t-period">&ndash;</span><span class="t-unit" id="t-period-unit">strongest repetition</span></div>
+      <div class="tile"><span class="t-label">Level drop</span><span class="t-value" id="t-drop">&ndash;</span><span class="t-unit">steady drop of the whole window</span></div>
+      <div class="tile"><span class="t-label">Decision time</span><span class="t-value" id="t-latency">&ndash;</span><span class="t-unit" id="t-latency-unit">on the ESP32</span></div>
+      <div class="tile"><span class="t-label">Resting level</span><span class="t-value" id="t-rest">&ndash;</span><span class="t-unit">measured with nothing near</span></div>
+    </div>
+  </section>
+
+  <section class="card session" aria-labelledby="h-session">
+    <div class="card-head">
+      <h2 id="h-session">This session</h2>
+      <button id="btn-clear" class="btn btn-ghost btn-sm">Clear</button>
+    </div>
+    <div class="tally-grid">
+      <div class="tally"><span class="t-value" id="s-n">0</span><span class="t-label">windows classified</span></div>
+      <div class="tally"><span class="t-value" id="s-thr">0</span><span class="t-label">threshold alarms</span></div>
+      <div class="tally"><span class="t-value" id="s-clf">0</span><span class="t-label">EMISense attack alarms</span></div>
+      <div class="tally"><span class="t-value" id="s-avoided">0</span><span class="t-label">threshold false alarms avoided</span></div>
+    </div>
+    <h3 class="sub-head">Recent decisions <span class="muted">newest first</span></h3>
+    <ol id="timeline" class="timeline" aria-label="Recent decisions"></ol>
+    <table class="counts">
+      <caption>Decisions per class</caption>
+      <thead><tr><th scope="col">Class</th><th scope="col">Windows</th><th scope="col">Share</th></tr></thead>
+      <tbody id="count-body"></tbody>
+    </table>
+  </section>
+
+  <section class="card model" aria-labelledby="h-model">
+    <div class="card-head"><h2 id="h-model">The model on the board</h2></div>
+    <dl class="facts">
+      <div><dt>Network</dt><dd id="m-net">15 features, 32 hidden units, 7 classes, int8 weights</dd></div>
+      <div><dt>Cost on the ESP32</dt><dd>6.4 KB flash, 5.1 KB RAM over the capture firmware</dd></div>
+      <div><dt>Held-out accuracy</dt><dd id="m-acc">&ndash;</dd></div>
+      <div><dt>Attack detection</dt><dd id="m-attack">&ndash;</dd></div>
+      <div><dt>Threshold baseline</dt><dd id="m-thr">&ndash;</dd></div>
+    </dl>
+    <p class="fine">Accuracy figures come from <code>analysis/results.json</code> (five seeds, recordings held out of
+      training). Demo mode replays recorded captures that were in the training data: it shows how the detector
+      behaves, not how accurate it is.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  EMISense &middot; CSE 469 Edge Computing, SRM University-AP &middot;
+  coil, BC548 and envelope stage into an ESP32 at 20 kSa/s
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

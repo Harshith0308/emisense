@@ -1,0 +1,6 @@
+numpy>=1.24
+scikit-learn>=1.3
+matplotlib>=3.7
+pyserial>=3.5
+# docs/make_diagrams.py only
+schemdraw>=0.18
