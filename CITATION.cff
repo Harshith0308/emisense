@@ -23,6 +23,8 @@ authors:
     affiliation: "SRM University-AP"
   - given-names: "Raushan Kumar"
     family-names: "Singh"
+repository-code: "https://github.com/Harshith0308/emisense"
+url: "https://github.com/Harshith0308/emisense"
 version: "1.0.0"
 license:
   - CC-BY-4.0
