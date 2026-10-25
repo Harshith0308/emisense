@@ -124,9 +124,10 @@ source after every move.
 - **The attack can destroy this front end.** The emitter used for the attack
   recordings, on a fully charged battery, destroyed the BC548 at 1 cm and a
   fresh one at 3 cm: the base read 0 V afterwards. Both failures were preceded
-  by a rise in the resting level. Any detector whose coil drives a transistor
-  base directly shares this exposure; an input clamp before the transistor
-  would protect it, and a drifting resting level is an early warning.
+  by a rise in the resting level. Detectors with a similar unprotected
+  transistor input may face a comparable risk. An input clamp before the
+  transistor is the obvious protection (not tested here), and a drifting
+  resting level is an early warning.
 - **ESP32 inputs are not 5 V tolerant.** If you connect a detector whose output
   swings to 5 V, use a 10 kΩ / 15 kΩ divider and a shared ground.
 - Pins 34–39 have no internal pull resistors: a bare GPIO34 holds whatever

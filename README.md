@@ -47,8 +47,8 @@ below.
   of held-out captures, 77.5% in rooms never seen in training and 66.8% for
   device models never seen.
 - **Generalization of attack detection:** 88.8% of attack captures at a
-  distance absent from training, and 91.9% from the emitter after a repair,
-  a state also absent from training.
+  distance absent from training, and 91.9% from the emitter after its coil
+  lead was reconnected, a state also absent from training.
 - **Attribution:** of the benign captures the threshold alarms on, 84.1% are
   given their actual source class.
 - **On the ESP32:** a decision takes 9.7 ms (median), of which the network
@@ -108,8 +108,9 @@ solderless breadboard and runs from the ESP32's 3.3 V. Parts, values and the
 hole-by-hole wiring are in [`docs/HARDWARE.md`](docs/HARDWARE.md).
 
 The attack emitter at 1 cm, and again at 3 cm, destroyed the front-end
-transistor when its battery was fully charged. Any detector whose coil drives
-a transistor directly shares this exposure; see the hardware notes.
+transistor when its battery was fully charged. Detectors with a similar
+unprotected transistor input may face a comparable risk; see the hardware
+notes.
 
 ## Reproducing the results
 
