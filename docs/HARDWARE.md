@@ -123,8 +123,8 @@ source after every move.
 
 - **The attack can destroy this front end.** The emitter used for the attack
   recordings, on a fully charged battery, destroyed the BC548 at 1 cm and a
-  fresh one at 3 cm: the base read 0 V afterwards. Both failures were preceded
-  by a rise in the resting level. Detectors with a similar unprotected
+  fresh one at 3 cm: the base read 0 V afterwards. Each time, the resting
+  level crept upward before the transistor gave out. Detectors with a similar unprotected
   transistor input may face a comparable risk. An input clamp before the
   transistor is the obvious protection (not tested here), and a drifting
   resting level is an early warning.

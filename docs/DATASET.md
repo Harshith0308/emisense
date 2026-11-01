@@ -135,9 +135,10 @@ apart because the damage changed its signal.
   while removing the response.
 - **Power.** The laptop logging the captures ran on battery for every
   capture: its charger raises the noise floor near the coil.
-- **The attack.** The emitter (a battery-powered high-voltage module driving
-  a loop coil of about 6 cm) was recorded outdoors on a terrace, away from
-  mains wiring, in three sessions, with ambient blocks at the same spot. A
+- **The attack.** The emitter (a high-voltage module run from a battery,
+  feeding a loop coil roughly 6 cm across) was recorded in the open air on a
+  rooftop, with no mains wiring nearby, in three sessions, with ambient
+  blocks at the same spot. A
   plastic sheet lay between the two coils. The emitter was connected for 1 to
   5 s at a time and the detector, in triggered mode, captured repeatedly while
   it ran. Distances of 1, 3 and 5 cm match the SecureTrack evaluation.

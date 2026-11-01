@@ -1,16 +1,18 @@
 # EMISense
 
-**On-device identification of electromagnetic interference (EMI) sources, for
-fewer false alarms in sensor-attack detection.**
+**Working out which kind of source made a burst of electromagnetic
+interference (EMI), on a microcontroller, so that everyday appliances stop
+setting off sensor-attack alarms.**
 
-Detectors of EMI attacks on analog sensors usually raise an alarm when the
-field picked up by a coil exceeds a fixed level. Ordinary appliances radiate
-comparable interference, and a level cannot tell a strong source far away from
-a weak one close by, so such a detector cannot tell an attack from a phone
-charger. EMISense adds an envelope detector to a low-cost coil-and-transistor
-front end, samples the envelope at 20,000 samples per second on an ESP32, and
-identifies the source on the device with a small neural network quantized to
-8-bit integers.
+A common way to guard an analog sensor against EMI attacks is to place a
+pickup coil beside it and sound an alarm whenever the coil's signal rises
+above a set level. Phone chargers, motors, displays and lighter sparks give
+signals of a similar size, and a single level mixes up how strong a source is
+with how close it is, so such a detector fires on household devices as readily
+as on an attacker. EMISense keeps the inexpensive coil and BC548 transistor,
+adds an envelope detector after them, samples the envelope 20,000 times a
+second on an ESP32, and lets a small 8-bit neural network on the ESP32 itself
+decide what produced each 100 ms burst.
 
 This repository contains:
 
@@ -43,18 +45,20 @@ below.
 | Amplitude threshold raised to T = 1601 counts | 62.7% | 5.7% | 0.0% |
 | **EMISense classifier** | **92.4%** | **5.8%** | **0.2%** |
 
-- **Source identification:** seven classes, the attack among them, in 87.6%
-  of held-out captures, 77.5% in rooms never seen in training and 66.8% for
-  device models never seen.
-- **Generalization of attack detection:** 88.8% of attack captures at a
-  distance absent from training, and 91.9% from the emitter after its coil
-  lead was reconnected, a state also absent from training.
+- **Naming the source:** the right one of seven classes (the attack is one of
+  them) for 87.6% of captures from recording blocks left out of training;
+  77.5% when a whole room is left out, and 66.8% when a device model is.
+- **Attacks in unfamiliar conditions:** trained without one of the three
+  distances, it still flags 88.8% of the attack captures at that distance. It
+  flags 91.9% of the captures from the emitter after its coil lead was
+  reconnected, a condition it never saw during training.
 - **Attribution:** of the benign captures the threshold alarms on, 84.1% are
   given their actual source class.
-- **On the ESP32:** a decision takes 9.7 ms (median), of which the network
-  takes 60 µs. The classifier adds 6.4 KB of flash and 5.1 KB of RAM to the
-  acquisition firmware. On 255 stored captures replayed to the board, its
-  features and class match the Python pipeline in every case.
+- **On the ESP32:** one decision, features plus network, needs a median of
+  9.7 ms, and only 60 µs of that is the neural network. Compared with the
+  capture-only firmware, the classifier costs 6.4 KB more flash and 5.1 KB
+  more RAM. Replaying 255 stored captures to the board gives the same
+  features and the same class as the Python code every time.
 
 ## Repository layout
 
@@ -169,18 +173,17 @@ Code and firmware: [MIT](LICENSE). Dataset (`data/` and `metadata.csv`):
 
 ## Authors
 
-G. Harshith Sai, Nissi Praharsha C., D. Manogyna and P. Sathvika
-(Department of Computer Science and Engineering, SRM University-AP), and
-Raushan Kumar Singh.
+G. Harshith Sai, Nissi Praharsha C., D. Manogyna and P. Sathvika, students
+of computer science and engineering at SRM University-AP, and Raushan Kumar
+Singh.
 
 Developed in the course CSE 469 Edge Computing at SRM University-AP.
 
 ## Acknowledgments
 
 We thank the households that hosted the recording sessions. The attack
-emitter is the one used to evaluate SecureTrack: R. K. Singh and S. Mishra,
-"SecureTrack: Protecting vehicular sensors from noninvasive EMI attacks,"
-*IEEE Sensors Journal*, vol. 25, no. 5, pp. 8857–8868, 2025.
+emitter is the one used to evaluate SecureTrack (R. K. Singh and S. Mishra,
+*IEEE Sensors Journal* 25(5), 2025).
 
 ## Safety
 
